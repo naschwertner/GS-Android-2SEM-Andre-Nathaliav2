@@ -15,24 +15,28 @@
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selecione o Reservatório Desejado"
+            android:text="@string/select_reservoir"
             android:layout_marginTop="30dp"
             android:textSize="24sp"
             android:layout_centerHorizontal="true"/>
 
-        <Spinner
-            android:id="@+id/spinnerReservoir"
+        <TextView
+            android:id="@+id/tvReservoirSelected"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/reservoir_selected"
             android:layout_below="@id/tvTitle"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="48dp"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"/>
+
 
         <Button
             android:id="@+id/btnSensorDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Detalhes dos Sensores"
-            android:layout_below="@id/spinnerReservoir"
+            android:text="@string/sensor_details_button"
+            android:layout_below="@id/tvReservoirSelected"
             android:textSize="18sp"
             android:layout_marginTop="40dp"
             android:backgroundTint="@color/blue"
@@ -42,7 +46,7 @@
             android:id="@+id/btnAlerts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Histórico e Notificações"
+            android:text="@string/alerts_history_button"
             android:layout_below="@id/btnSensorDetails"
             android:layout_marginTop="20dp"
             android:textSize="18sp"

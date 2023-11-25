@@ -22,6 +22,8 @@
     <string name="select_reservoir">Select the Desired Reservoir</string>
     <string name="sensor_details_button">Sensor Details/Dashboard</string>
     <string name="alerts_history_button">Alerts and Notifications History</string>
+    <string name="reservoir_selected">Reservoir 3 selected</string>
+
 
     <!-- Strings for fragment_sensor.xml -->
     <string name="current_sensor_level">Current Level of Each Sensor</string>

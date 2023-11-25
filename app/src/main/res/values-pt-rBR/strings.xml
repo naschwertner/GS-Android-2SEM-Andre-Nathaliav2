@@ -22,6 +22,7 @@
     <string name="select_reservoir">Selecionar o Reservatório Desejado</string>
     <string name="sensor_details_button">Detalhes/Dashboard dos Sensores</string>
     <string name="alerts_history_button">Histórico de Alertas e Notificações</string>
+    <string name="reservoir_selected">Reservatório 3 selecionado</string>
 
     <!-- Strings para fragment_sensor.xml -->
     <string name="current_sensor_level">Nível Atual de Cada Sensor</string>
