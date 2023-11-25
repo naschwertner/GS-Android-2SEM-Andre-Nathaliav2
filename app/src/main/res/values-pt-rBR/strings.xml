@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">GS2SEMAndreNathalia</string>
+    <string name="navigation_drawer_open">Abrir menu de navegação</string>
+    <string name="navigation_drawer_close">Fechar menu de navegação</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Cabeçalho de navegação</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="menu_home">Início</string>
+    <string name="menu_gallery">Detalhes dos Sensores</string>
+    <string name="menu_slideshow">Histórico e Notificações</string>
+
+    <!-- Strings para fragment_alertas.xml -->
+    <string name="alert_title">Alertas e Notificações</string>
+    <string name="enable_notifications">Desejo receber notificações quando o nível de qualquer sensor sair do intervalo de referência</string>
+    <string name="select_maintenance_date">Selecionar Data de Manutenção Programada</string>
+    <string name="notification_history">Histórico de Notificações</string>
+    <string name="notification_log">10/03/2023: Nível de Cloro Fora do Intervalo\n15/03/2023: Nível de Turbidez Elevado\n20/03/2023: Nível de pH Ideal\n...</string>
+
+    <!-- Strings para fragment_home.xml -->
+    <string name="select_reservoir">Selecionar o Reservatório Desejado</string>
+    <string name="sensor_details_button">Detalhes/Dashboard dos Sensores</string>
+    <string name="alerts_history_button">Histórico de Alertas e Notificações</string>
+
+    <!-- Strings para fragment_sensor.xml -->
+    <string name="current_sensor_level">Nível Atual de Cada Sensor</string>
+    <string name="chlorine_level">Nível de Cloro:</string>
+    <string name="turbidity_level">Nível de Turbidez:</string>
+    <string name="nitrate_level">Nível de Nitrato:</string>
+    <string name="phosphate_level">Nível de Fosfato:</string>
+    <string name="redox_level">Nível de Redox:</string>
+    <string name="ph_level">Nível de pH:</string>
+    <string name="reference_values_title">Valores de Referência</string>
+    <string name="chlorine_reference">Cloro (0,2 a 1,0 mg/L): 20% deste máximo considerado seguro</string>
+    <string name="turbidity_reference">Turbidez (&lt; 1 NTU): 0% deste máximo considerado seguro</string>
+    <string name="nitrate_reference">Nitratos (&lt; 10 mg/L): 0% deste máximo considerado seguro</string>
+    <string name="phosphate_reference">Fosfatos: 0% deste máximo considerado seguro</string>
+    <string name="redox_reference">Redox: 0% deste máximo considerado seguro</string>
+    <string name="ph_reference">pH (6,5 a 8,5): 6,67% deste máximo considerado seguro</string>
+</resources>

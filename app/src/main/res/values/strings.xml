@@ -8,6 +8,39 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Detalhes dos Sensores</string>
-    <string name="menu_slideshow">Histórico e Notificações</string>
+    <string name="menu_gallery">Sensor Details</string>
+    <string name="menu_slideshow">History and Notifications</string>
+
+    <!-- Strings for fragment_alertas.xml -->
+    <string name="alert_title">Alerts and Notifications</string>
+    <string name="enable_notifications">I wish to receive notifications when the level of any sensor goes out of the reference range</string>
+    <string name="select_maintenance_date">Select Scheduled Maintenance Date</string>
+    <string name="notification_history">Notification History</string>
+    <string name="notification_log">10/03/2023: Chlorine Level Out of Range\n15/03/2023: Elevated Turbidity Level\n20/03/2023: Ideal pH Level\n...</string>
+
+    <!-- Strings for fragment_home.xml -->
+    <string name="select_reservoir">Select the Desired Reservoir</string>
+    <string name="sensor_details_button">Sensor Details/Dashboard</string>
+    <string name="alerts_history_button">Alerts and Notifications History</string>
+
+    <!-- Strings for fragment_sensor.xml -->
+    <string name="current_sensor_level">Current Level of Each Sensor</string>
+    <string name="chlorine_level">Chlorine Level:</string>
+    <string name="turbidity_level">Turbidity Level:</string>
+    <string name="nitrate_level">Nitrate Level:</string>
+    <string name="phosphate_level">Phosphate Level:</string>
+    <string name="redox_level">Redox Level:</string>
+    <string name="ph_level">PH Level:</string>
+    <string name="reference_values_title">Reference Values</string>
+    <string name="chlorine_reference">Chlorine (0.2 to 1.0 mg/L): 20% of this maximum considered safe</string>
+    <string name="turbidity_reference">Turbidity (&lt; 1 NTU): 0% of this maximum considered safe</string>
+    <string name="nitrate_reference">Nitrates (&lt; 10 mg/L): 0% of this maximum considered safe</string>
+    <string name="phosphate_reference">Phosphates: 0% of this maximum considered safe</string>
+    <string name="redox_reference">Redox: 0% of this maximum considered safe</string>
+    <string name="ph_reference">pH (6.5 to 8.5): 6.67% of this maximum considered safe</string>
+
 </resources>
+
+
+
+
