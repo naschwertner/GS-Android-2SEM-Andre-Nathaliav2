@@ -1,4 +1,4 @@
-package com.example.gs2semandrenathalia.ui.slideshow
+package com.example.gs2semandrenathalia.View
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.gs2semandrenathalia.ViewModel.AlertasViewModel
 import com.example.gs2semandrenathalia.databinding.FragmentAlertasBinding
 
 class AlertasFragment : Fragment() {

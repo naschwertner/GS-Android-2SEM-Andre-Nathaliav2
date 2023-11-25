@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.gallery.SensorFragment">
+    tools:context=".View.SensorFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,16 +36,18 @@
                 android:text="Nível de Cloro:"/>
 
             <ProgressBar
+                android:id="@+id/pbCloro"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 style="@android:style/Widget.ProgressBar.Horizontal"
-                android:progress="20" />
+                />
 
             <TextView
+                android:id="@+id/pbCloroNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="20%" /> <!-- Valor mockado -->
+                /> <!-- Valor mockado -->
         </LinearLayout>
 
         <!-- sensor de turbidez -->
@@ -62,16 +64,18 @@
                 android:text="Nível de Turbidez:"/>
 
             <ProgressBar
+                android:id="@+id/pbTurbidez"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 style="@android:style/Widget.ProgressBar.Horizontal"
-                android:progress="60" />
+                />
 
             <TextView
+                android:id="@+id/pbTurbidezNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="60%" /> <!-- Valor mockado -->
+                /> <!-- Valor mockado -->
         </LinearLayout>
 
         <!-- sensor de nitratos -->
@@ -88,16 +92,18 @@
                 android:text="Nível de Nitratos:"/>
 
             <ProgressBar
+                android:id="@+id/pbNitratos"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 style="@android:style/Widget.ProgressBar.Horizontal"
-                android:progress="60" />
+                />
 
             <TextView
+                android:id="@+id/pbNitratosNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="60%" /> <!-- Valor mockado -->
+                /> <!-- Valor mockado -->
         </LinearLayout>
 
 
@@ -115,16 +121,18 @@
                 android:text="Nível de Fosfatos:"/>
 
             <ProgressBar
+                android:id="@+id/pbFosfatos"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 style="@android:style/Widget.ProgressBar.Horizontal"
-                android:progress="60" />
+                />
 
             <TextView
+                android:id="@+id/pbFosfatosNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="60%" /> <!-- Valor mockado -->
+                /> <!-- Valor mockado -->
         </LinearLayout>
 
         <!-- Sensor de Redox -->
@@ -141,16 +149,17 @@
                 android:text="Nível de Redox:"/>
 
             <ProgressBar
+                android:id="@+id/pbRedox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 style="@android:style/Widget.ProgressBar.Horizontal"
-                android:progress="60" />
+                />
 
             <TextView
+                android:id="@+id/pbRedoxNumber"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="60%" /> <!-- Valor mockado -->
+                android:layout_height="wrap_content"/> <!-- Valor mockado -->
         </LinearLayout>
 
         <!-- Sensor de PH -->
@@ -167,13 +176,15 @@
                 android:text="Nível de PH:"/>
 
             <ProgressBar
+                android:id="@+id/pbPh"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 style="@android:style/Widget.ProgressBar.Horizontal"
-                android:progress="60" />
+                />
 
             <TextView
+                android:id="@+id/pbPhNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="60%" /> <!-- Valor mockado -->

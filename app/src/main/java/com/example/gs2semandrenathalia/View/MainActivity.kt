@@ -1,8 +1,7 @@
-package com.example.gs2semandrenathalia
+package com.example.gs2semandrenathalia.View
 
 import android.os.Bundle
 import android.view.Menu
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -11,6 +10,13 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import com.example.gs2semandrenathalia.Models.IRandomNumbers
+import com.example.gs2semandrenathalia.R
+import com.example.gs2semandrenathalia.ViewModel.RandomNumbersViewModel
+import com.example.gs2semandrenathalia.ViewModel.RandomNumbersViewModelFactory
+import com.example.gs2semandrenathalia.api.NetworkUtils
 import com.example.gs2semandrenathalia.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -51,4 +57,7 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+
+
 }
