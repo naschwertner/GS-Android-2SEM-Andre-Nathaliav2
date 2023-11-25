@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione o Reservatório Desejado"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"/>
+
+        <Spinner
+            android:id="@+id/spinnerReservoir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="50dp"/>
+
+        <Button
+            android:id="@+id/btnSensorDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalhes dos Sensores/Dashboard"
+            android:layout_below="@id/spinnerReservoir"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/blue"/>
+
+        <Button
+            android:id="@+id/btnAlerts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Histórico de Alertas e Notificações"
+            android:layout_below="@id/btnSensorDetails"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:backgroundTint="@color/blue"/>
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="313dp"
+            android:layout_height="397dp"
+            android:layout_below="@+id/btnAlerts"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/caixas_dagua" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
