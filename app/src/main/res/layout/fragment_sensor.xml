@@ -17,10 +17,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Nível Atual de Cada Sensor"
+            android:text="@string/current_sensor_level"
             android:textSize="24sp"
-            android:layout_gravity="center_horizontal"
-            />
+            android:layout_gravity="center_horizontal"/>
 
         <!-- Sensor de Cloro -->
         <LinearLayout
@@ -33,24 +32,22 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Nível de Cloro:"/>
+                android:text="@string/chlorine_level"/>
 
             <ProgressBar
                 android:id="@+id/pbCloro"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                style="@android:style/Widget.ProgressBar.Horizontal"
-                />
+                style="@android:style/Widget.ProgressBar.Horizontal"/>
 
             <TextView
                 android:id="@+id/pbCloroNumber"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                /> <!-- Valor mockado -->
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
-        <!-- sensor de turbidez -->
+        <!-- Sensor de Turbidez -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,21 +58,19 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Nível de Turbidez:"/>
+                android:text="@string/turbidity_level"/>
 
             <ProgressBar
                 android:id="@+id/pbTurbidez"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                style="@android:style/Widget.ProgressBar.Horizontal"
-                />
+                style="@android:style/Widget.ProgressBar.Horizontal"/>
 
             <TextView
                 android:id="@+id/pbTurbidezNumber"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                /> <!-- Valor mockado -->
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
         <!-- sensor de nitratos -->
@@ -89,25 +84,23 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Nível de Nitratos:"/>
+                android:text="@string/nitrate_level"/>
 
             <ProgressBar
                 android:id="@+id/pbNitratos"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                style="@android:style/Widget.ProgressBar.Horizontal"
-                />
+                style="@android:style/Widget.ProgressBar.Horizontal"/>
 
             <TextView
                 android:id="@+id/pbNitratosNumber"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                /> <!-- Valor mockado -->
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
 
-        <!-- sensor de Fosfatos -->
+        <!-- Sensor de Fosfatos -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -118,21 +111,19 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Nível de Fosfatos:"/>
+                android:text="@string/phosphate_level"/>
 
             <ProgressBar
                 android:id="@+id/pbFosfatos"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                style="@android:style/Widget.ProgressBar.Horizontal"
-                />
+                style="@android:style/Widget.ProgressBar.Horizontal"/>
 
             <TextView
                 android:id="@+id/pbFosfatosNumber"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                /> <!-- Valor mockado -->
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
         <!-- Sensor de Redox -->
@@ -146,15 +137,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Nível de Redox:"/>
+                android:text="@string/redox_level"/> <!-- Referência à string corrigida -->
 
             <ProgressBar
                 android:id="@+id/pbRedox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                style="@android:style/Widget.ProgressBar.Horizontal"
-                />
+                style="@android:style/Widget.ProgressBar.Horizontal"/>
 
             <TextView
                 android:id="@+id/pbRedoxNumber"
@@ -173,15 +163,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Nível de PH:"/>
+                android:text="@string/ph_level"/> <!-- Referência à string corrigida -->
 
             <ProgressBar
                 android:id="@+id/pbPh"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                style="@android:style/Widget.ProgressBar.Horizontal"
-                />
+                style="@android:style/Widget.ProgressBar.Horizontal"/>
 
             <TextView
                 android:id="@+id/pbPhNumber"
@@ -190,58 +179,58 @@
                 android:text="60%" /> <!-- Valor mockado -->
         </LinearLayout>
 
-        <!-- valores de referencia  -->
+
+        <!-- valores de referencia -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Valores de Referência"
+            android:text="@string/reference_values_title"
             android:textSize="24sp"
-            android:layout_gravity="center_horizontal"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Cloro (0,2 a 1,0 mg/L): 20% desse máximo considerado seguro"
-            android:textSize="16sp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Turbidez (&lt; 1 NTU): 0% desse máximo considerado seguro"
-            android:textSize="16sp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Nitratos (&lt; 10 mg/L): 0% desse máximo considerado seguro"
-            android:textSize="16sp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Fosfatos: 0% desse máximo considerado seguro"
-            android:textSize="16sp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Redox: 0% desse máximo considerado seguro"
-            android:textSize="16sp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="pH (6,5 a 8,5):  6,67% desse máximo considerado seguro"
-            android:textSize="16sp"
-            />
+            android:layout_gravity="center_horizontal"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/chlorine_reference"
+            android:textSize="16sp"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/turbidity_reference"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/nitrate_reference"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/phosphate_reference"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/redox_reference"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/ph_reference"
+            android:textSize="16sp"/>
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

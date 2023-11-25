@@ -31,21 +31,23 @@
             android:id="@+id/btnSensorDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Detalhes dos Sensores/Dashboard"
+            android:text="Detalhes dos Sensores"
             android:layout_below="@id/spinnerReservoir"
             android:textSize="18sp"
             android:layout_marginTop="40dp"
-            android:backgroundTint="@color/blue"/>
+            android:backgroundTint="@color/blue"
+            android:onClick="goToSensorDetailsFragment"/>
 
         <Button
             android:id="@+id/btnAlerts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Histórico de Alertas e Notificações"
+            android:text="Histórico e Notificações"
             android:layout_below="@id/btnSensorDetails"
             android:layout_marginTop="20dp"
             android:textSize="18sp"
-            android:backgroundTint="@color/blue"/>
+            android:backgroundTint="@color/blue"
+            android:onClick="goToAlertsFragment"/>
 
         <ImageView
             android:id="@+id/ivImage"

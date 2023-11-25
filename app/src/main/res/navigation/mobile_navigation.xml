@@ -9,17 +9,32 @@
         android:id="@+id/nav_home"
         android:name="com.example.gs2semandrenathalia.View.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_sensorFragment"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_homeFragment_to_alertasFragment"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.gs2semandrenathalia.View.SensorFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_sensor" />
+        tools:layout="@layout/fragment_sensor" >
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.gs2semandrenathalia.View.AlertasFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_alertas" />
+        tools:layout="@layout/fragment_alertas" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 </navigation>
